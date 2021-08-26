@@ -1,0 +1,67 @@
+drop table tblPersonal;
+
+create table tblPersonal (
+    personalSeq number primary key,
+    userSeq number not null references tblUser(userSeq),
+    theaterName varchar2(50) not null references tblTheater(theaterName),
+    personalType varchar2(30) not null,
+    personalTitle varchar2(100) not null,
+    personalContent varchar2(2000) not null,
+    personalPicture varchar2(100),
+    personalRegdate date default sysdate not null,
+    personalCommentCheck varchar2(1) default 'n' not null
+);
+
+create sequence seqPersonal;
+
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,6,'창원내서','VIP','VIP 질문있습니다.','VIP 담당자 연락처를 알 수 있을까요?','','2021-07-14','y');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,3,'인천논현','영화예매','영화예매에 관하여 질문있습니다.','영화예매 담당자 연락처를 알 수 있을까요?','','2021-07-06','n');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,1,'경산하양','분실문의','분실문의에 대해 문의드립니다.','분실문의 페이지에 들어가고 싶은데 오류가 뜹니다.','','2021-07-06','y');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,3,'남양주','분실문의','분실문의 질문있습니다.','분실문의 페이지에 들어가고 싶은데 오류가 뜹니다.','','2021-07-19','n');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,3,'구미강동','VIP','VIP에 대해 궁굼합니다.','VIP 담당자 연락처를 알 수 있을까요?','','2021-07-03','y');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,7,'별내','영화예매','영화예매에 대해 궁굼합니다.','영화예매 페이지에 들어가고 싶은데 오류가 뜹니다.','','2021-07-08','n');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,6,'원주센트럴','상영관','상영관 질문있습니다.','상영관 담당자 연락처를 알 수 있을까요?','','2021-07-24','n');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,9,'창원','상영관','상영관에 관하여 질문있습니다.','상영관 페이지에 들어가고 싶은데 오류가 뜹니다.','','2021-07-16','y');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,7,'화곡','영화예매','영화예매에 대해 문의드립니다.','영화예매 페이지에 들어가고 싶은데 오류가 뜹니다.','','2021-07-19','n');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,7,'신촌','극장','극장에 관하여 질문있습니다.','극장 담당자 연락처를 알 수 있을까요?','','2021-07-09','y');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,3,'양주','상영관','상영관에 대해 문의드립니다.','상영관 담당자 연락처를 알 수 있을까요?','','2021-07-11','y');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,8,'세종(조치원)','스토어','스토어에 관하여 질문있습니다.','스토어 페이지에 들어가고 싶은데 오류가 뜹니다.','','2021-07-09','y');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,7,'경북도청','마이페이지','마이페이지에 관하여 질문있습니다.','마이페이지 페이지에 들어가고 싶은데 오류가 뜹니다.','','2021-07-03','y');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,8,'검단','스토어','스토어 질문있습니다.','스토어 페이지에 들어가고 싶은데 오류가 뜹니다.','','2021-07-10','n');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,7,'강남','상영관','상영관에 대해 문의드립니다.','상영관 페이지에 들어가고 싶은데 오류가 뜹니다.','','2021-07-07','y');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,9,'대구신세계(동대구)','VIP','VIP에 대해 궁굼합니다.','VIP 담당자 연락처를 알 수 있을까요?','','2021-07-10','y');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,6,'광주하남','극장','극장 질문있습니다.','극장 담당자 연락처를 알 수 있을까요?','','2021-07-09','y');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,5,'강남','스토어','스토어에 관하여 질문있습니다.','스토어 페이지에 들어가고 싶은데 오류가 뜹니다.','','2021-07-04','y');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,8,'천안','스토어','스토어 질문있습니다.','스토어 담당자 연락처를 알 수 있을까요?','','2021-07-19','n');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,2,'전대(광주)','스토어','스토어에 관하여 질문있습니다.','스토어 페이지에 들어가고 싶은데 오류가 뜹니다.','','2021-07-06','y');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,1,'양산','상영관','상영관에 관하여 질문있습니다.','상영관 담당자 연락처를 알 수 있을까요?','','2021-07-16','n');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,8,'대구(칠성로)','스토어','스토어에 관하여 질문있습니다.','스토어 담당자 연락처를 알 수 있을까요?','','2021-07-08','n');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,5,'전주혁신','상영관','상영관에 관하여 질문있습니다.','상영관 페이지에 들어가고 싶은데 오류가 뜹니다.','','2021-07-10','y');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,7,'광주상무','분실문의','분실문의에 대해 문의드립니다.','분실문의 페이지에 들어가고 싶은데 오류가 뜹니다.','','2021-07-10','y');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,1,'킨텍스','스토어','스토어 질문있습니다.','스토어 페이지에 들어가고 싶은데 오류가 뜹니다.','','2021-07-05','y');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,3,'파주금촌','극장','극장에 대해 궁굼합니다.','극장 담당자 연락처를 알 수 있을까요?','','2021-07-19','n');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,5,'오창','상영관','상영관에 대해 궁굼합니다.','상영관 페이지에 들어가고 싶은데 오류가 뜹니다.','','2021-07-21','y');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,1,'동대문','상영관','상영관에 대해 문의드립니다.','상영관 페이지에 들어가고 싶은데 오류가 뜹니다.','','2021-07-20','y');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,8,'일산벨라시타','상영관','상영관에 대해 문의드립니다.','상영관 페이지에 들어가고 싶은데 오류가 뜹니다.','','2021-07-19','y');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,2,'대구이시아','극장','극장에 관하여 질문있습니다.','극장 담당자 연락처를 알 수 있을까요?','','2021-07-03','n');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,7,'해운대(장산)','VIP','VIP에 대해 궁굼합니다.','VIP 담당자 연락처를 알 수 있을까요?','','2021-07-12','y');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,4,'세종(조치원)','VIP','VIP 질문있습니다.','VIP 담당자 연락처를 알 수 있을까요?','','2021-07-02','n');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,4,'센트럴','VIP','VIP에 대해 궁굼합니다.','VIP 담당자 연락처를 알 수 있을까요?','','2021-07-23','y');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,4,'덕천','극장','극장에 관하여 질문있습니다.','극장 페이지에 들어가고 싶은데 오류가 뜹니다.','','2021-07-13','y');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,5,'공주','스토어','스토어에 대해 궁굼합니다.','스토어 담당자 연락처를 알 수 있을까요?','','2021-07-14','y');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,5,'전대(광주)','상영관','상영관에 관하여 질문있습니다.','상영관 담당자 연락처를 알 수 있을까요?','','2021-07-18','n');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,6,'코엑스','극장','극장에 대해 궁굼합니다.','극장 페이지에 들어가고 싶은데 오류가 뜹니다.','','2021-07-05','n');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,6,'양산','극장','극장에 관하여 질문있습니다.','극장 페이지에 들어가고 싶은데 오류가 뜹니다.','','2021-07-12','y');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,7,'청라지젤','VIP','VIP에 대해 문의드립니다.','VIP 담당자 연락처를 알 수 있을까요?','','2021-07-11','y');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,3,'창원내서','상영관','상영관에 대해 문의드립니다.','상영관 페이지에 들어가고 싶은데 오류가 뜹니다.','','2021-07-15','n');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,6,'수원남문','상영관','상영관 질문있습니다.','상영관 담당자 연락처를 알 수 있을까요?','','2021-07-09','y');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,3,'킨텍스','분실문의','분실문의에 대해 문의드립니다.','분실문의 담당자 연락처를 알 수 있을까요?','','2021-07-18','y');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,6,'양산라피에스타','분실문의','분실문의에 대해 궁굼합니다.','분실문의 페이지에 들어가고 싶은데 오류가 뜹니다.','','2021-07-01','n');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,8,'속초','분실문의','분실문의에 대해 궁굼합니다.','분실문의 담당자 연락처를 알 수 있을까요?','','2021-07-01','n');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,4,'남양주현대아울렛 스페이스원','스토어','스토어에 관하여 질문있습니다.','스토어 담당자 연락처를 알 수 있을까요?','','2021-07-21','n');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,3,'양산','영화예매','영화예매에 대해 문의드립니다.','영화예매 페이지에 들어가고 싶은데 오류가 뜹니다.','','2021-07-17','n');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,3,'분당','스토어','스토어 질문있습니다.','스토어 담당자 연락처를 알 수 있을까요?','','2021-07-21','n');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,5,'구미강동','영화예매','영화예매에 대해 문의드립니다.','영화예매 담당자 연락처를 알 수 있을까요?','','2021-07-03','y');
+insert into tblPersonal (personalSeq,userSeq,theaterName,personalType,personalTitle,personalContent,personalPicture,personalRegdate,personalCommentCheck) values (seqPersonal.nextVal,8,'부천스타필드시티','상영관','상영관 질문있습니다.','상영관 페이지에 들어가고 싶은데 오류가 뜹니다.','','2021-07-02','y');
+
+select * from tblPersonal;
