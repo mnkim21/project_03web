@@ -13,14 +13,17 @@
 
 ## 🛠 사용기술
 <p align="center">
-  <img src="https://img.shields.io/badge/Language-Java_8-007396?style=flat&logo=java&logoColor=white">&nbsp 
-  <img src="https://img.shields.io/badge/Library-Bootstrap-563D7C?style=flat&logo=bootstrap">&nbsp 
-  <img src="https://img.shields.io/badge/Language-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=white">&nbsp 
-  <img src="https://img.shields.io/badge/Language-JSP-orange?style=flat">&nbsp 
-  <img src="https://img.shields.io/badge/Language-JSTL-green?style=flat">&nbsp 
-  <img src="https://img.shields.io/badge/Language-jquery-0769AD?style=flat&logo=jquery&logoColor=white">&nbsp 
+  <img src="https://img.shields.io/badge/Language-Java_8-007396?style=flat&logo=java&logoColor=white">&nbsp
   <img src="https://img.shields.io/badge/Database-Oracle-F80000?style=flat&logo=oracle&logoColor=white">&nbsp 
-  <img src="https://img.shields.io/badge/Server-ApacheTomcat_8.5v-D22128?style=flat&logo=apahce&logoColor=white">&nbsp 
+  <img src="https://img.shields.io/badge/Language-HTML-green?style=flat&logo=html&logoColor=white">&nbsp
+  <img src="https://img.shields.io/badge/Language-CSS-green?style=flat&logo=css&logoColor=white">&nbsp
+  <img src="https://img.shields.io/badge/Language-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=white">&nbsp
+  <img src="https://img.shields.io/badge/Language-jQuery-0769AD?style=flat&logo=jquery&logoColor=white">&nbsp
+  <img src="https://img.shields.io/badge/Language-JSTL-green?style=flat">&nbsp
+  <img src="https://img.shields.io/badge/Language-Servlet-0769AD?style=flat&logo=servlet&logoColor=white">&nbsp
+  <img src="https://img.shields.io/badge/Language-JSP-orange?style=flat">&nbsp
+  <img src="https://img.shields.io/badge/Server-ApacheTomcat_8.5v-D22128?style=flat&logo=apahce&logoColor=white">&nbsp
+  <img src="https://img.shields.io/badge/Library-Bootstrap-563D7C?style=flat&logo=bootstrap">&nbsp 
   <img src="https://img.shields.io/badge/API-카카오 맵-skyblue?style=flat"> 
 </p>
 
