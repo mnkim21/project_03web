@@ -15,8 +15,8 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Language-Java_8-007396?style=flat&logo=java&logoColor=white">&nbsp
   <img src="https://img.shields.io/badge/Database-Oracle-F80000?style=flat&logo=oracle&logoColor=white">&nbsp 
-  <img src="https://img.shields.io/badge/Language-HTML-green?style=flat&logo=html&logoColor=white">&nbsp
-  <img src="https://img.shields.io/badge/Language-CSS-green?style=flat&logo=css&logoColor=white">&nbsp
+  <img src="https://img.shields.io/badge/Language-HTML-skyblue?style=flat&logo=html&logoColor=white">&nbsp
+  <img src="https://img.shields.io/badge/Language-CSS-lightgreen?style=flat&logo=css&logoColor=white">&nbsp
   <img src="https://img.shields.io/badge/Language-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=white">&nbsp
   <img src="https://img.shields.io/badge/Language-jQuery-0769AD?style=flat&logo=jquery&logoColor=white">&nbsp
   <img src="https://img.shields.io/badge/Language-JSTL-green?style=flat">&nbsp
